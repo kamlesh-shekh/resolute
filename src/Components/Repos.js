@@ -55,8 +55,8 @@ function ReposBox({ data }) {
   const { number, name } = data;
   return (
     <div className="repos-box">
-      <h2 className="repose-font">{number}+</h2>
-      <p>{name}</p>
+      <h2 className="repose-font white-color">{number}+</h2>
+      <p className="white-color">{name}</p>
     </div>
   );
 }

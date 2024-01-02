@@ -64,7 +64,7 @@ export default function Footer() {
           <div className="container">
             <div className="footer-grid">
               <div>
-                <h4>Fine Dine POS</h4>
+                <h4 className="white-color">Fine Dine POS</h4>
 
                 {application.map((cur, i) => {
                   return <Applications items={cur} key={i} />;
@@ -85,24 +85,28 @@ export default function Footer() {
 
                 <div>
                   <h4>Quick Links</h4>
-                  {Quick.map((cur) => {
-                    return <li className="li-mb ">{cur}</li>;
+                  {Quick.map((cur, i) => {
+                    return (
+                      <li key={i} className="li-mb ">
+                        {cur}
+                      </li>
+                    );
                   })}
                 </div>
               </div>
 
               <div>
                 <div>
-                  <h4>Quick Links</h4>
+                  <h4>Get In Touch</h4>
                   <ul>
                     {getTouch.map((cur, i) => {
                       const { icon, name } = cur;
                       return (
                         <li key={i} className="li-mb">
-                          <span>
+                          <span className="get-icon white-color">
                             <ion-icon name={icon}></ion-icon>
-                          </span>{" "}
-                          <Link to="#" style={{ color: "#fff" }}>
+                          </span>
+                          <Link to="#" className="white-color">
                             {name}
                           </Link>
                         </li>
@@ -123,8 +127,15 @@ export default function Footer() {
                       </Link>
                     </li>
                     <li className="country-flex">
-                      {countrys.map((path) => {
-                        return <img src={path} alt="footer-img" width="20%" />;
+                      {countrys.map((path, i) => {
+                        return (
+                          <img
+                            src={path}
+                            key={i}
+                            alt="footer-img"
+                            width="20%"
+                          />
+                        );
                       })}
                     </li>
                   </ul>
@@ -149,17 +160,15 @@ export default function Footer() {
           <hr></hr>
 
           <br></br>
-          <p className="center">© 2024 All Rights Reserved by RePOS.</p>
+          <p className="center white-color">
+            © 2024 All Rights Reserved by RePOS.
+          </p>
         </div>
       </section>
     </>
   );
 }
 
-function Applications({ items, key }) {
-  return (
-    <li key={key} className="li-mb ">
-      {items}
-    </li>
-  );
+function Applications({ items }) {
+  return <li className="li-mb ">{items}</li>;
 }

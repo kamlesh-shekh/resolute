@@ -4,7 +4,8 @@ html {
 }
 body {
   overflow-x: hidden;
-  font-family: "Avenir LT Pro";
+  /* font-family: "Avenir LT Pro"; */
+  font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif;
 }
 h1 {
   font-size: 3.4rem;
@@ -21,17 +22,24 @@ h4 {
 h5 {
   font-size: 1.8rem;
 }
+h2,
+h3,
+h4,
+h5 {
+  color: #333333;
+}
 P,
 a,
 span,
 div {
   font-size: 1.6rem;
+  font-weight: 400 !important;
+  color: #333333;
 }
 ul {
   list-style: none;
 }
 a {
-  color: #000;
   text-decoration: none;
 }
 .center {
@@ -50,4 +58,7 @@ a {
 }
 .section-m_tb {
   margin: 10rem 0;
+}
+.white-color {
+  color: #fff;
 }

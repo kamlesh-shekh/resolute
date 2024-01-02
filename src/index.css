@@ -7,5 +7,5 @@
   font-family: "Avenir LT Pro";
   src: local("Avenir LT Pro"),
     url("./Fonts/AvenirLTProBlack.otf") format("truetype");
-  /* font-weight: bold; */
+  font-weight: bold;
 }

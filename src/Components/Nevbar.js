@@ -41,10 +41,6 @@ export default function Nevbar() {
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
           <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
-        {/* <button className="btn--mobile-nav" onClick={() => toggle()}>
-          <ion-icon className="icon-mobile-nav" name="menu-outline"></ion-icon>
-          <ion-icon className="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button> */}
       </header>
       <hr></hr>
     </>

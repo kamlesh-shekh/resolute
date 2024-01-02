@@ -65,7 +65,7 @@ export default function Feature() {
 
             <div className="feature-grid">
               {images.map((cur, i) => {
-                return <FeatureBox cur={cur} />;
+                return <FeatureBox cur={cur} key={i} />;
               })}
             </div>
           </div>

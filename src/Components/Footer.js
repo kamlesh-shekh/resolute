@@ -74,8 +74,12 @@ export default function Footer() {
               <div>
                 <div>
                   <h4>Products</h4>
-                  {products.map((cur) => {
-                    return <li className="li-mb ">{cur}</li>;
+                  {products.map((cur, i) => {
+                    return (
+                      <li key={i} className="li-mb ">
+                        {cur}
+                      </li>
+                    );
                   })}
                 </div>
 
@@ -91,10 +95,10 @@ export default function Footer() {
                 <div>
                   <h4>Quick Links</h4>
                   <ul>
-                    {getTouch.map((cur) => {
+                    {getTouch.map((cur, i) => {
                       const { icon, name } = cur;
                       return (
-                        <li className="li-mb ">
+                        <li key={i} className="li-mb">
                           <span>
                             <ion-icon name={icon}></ion-icon>
                           </span>{" "}
@@ -132,9 +136,9 @@ export default function Footer() {
 
           <div className="container">
             <div className="footer-city">
-              {footerCitys.map((city) => {
+              {footerCitys.map((city, i) => {
                 return (
-                  <Link to="#" style={{ color: "white" }}>
+                  <Link to="#" key={i} style={{ color: "white" }}>
                     {city}
                   </Link>
                 );

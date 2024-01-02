@@ -21,14 +21,6 @@ h4 {
 h5 {
   font-size: 1.8rem;
 }
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Avenir Next LT Pro" !important;
-} */
 P,
 a,
 span,
@@ -50,18 +42,6 @@ a {
   color: #fff;
   background-color: #002365;
   border-radius: 0.5rem;
-}
-.main-color {
-  color: #002365;
-}
-.main-bg-color {
-  background-color: #002365;
-}
-.second-color {
-  color: #21e287;
-}
-.second-bg-color {
-  background-color: #21e287;
 }
 .container {
   max-width: 130rem;

@@ -1,0 +1,127 @@
+@media (max-width: 1024px) {
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  /* html {
+    font-size: 50%;
+  } */
+  .container {
+    padding: 0 8rem;
+  }
+  /* MOBILE NAVIGATION */
+  .btn--mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    z-index: 5;
+
+    /* HIDE */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+  /* HERO SECTION */
+  .hero-bg-img {
+    bottom: -15rem;
+  }
+  .hero-bg-up {
+    margin-top: 24rem;
+  }
+  /* REPOSE SECTION */
+  .repos-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+  }
+  .repos-Box-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+  .repos-box {
+    padding: 7rem 5rem;
+  }
+  .repose-font {
+    font-size: 5rem;
+  }
+  .box-up {
+    margin-top: -8rem;
+  }
+  /* FEATURE SECTION */
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .feature-box {
+    padding: 5rem;
+  }
+  /* FOOTER SECTION */
+  .footer-grid {
+    padding: 5rem 0;
+  }
+}
+@media (max-width: 576px) {
+  /* html {
+    font-size: 43.45%;
+  } */
+  .container {
+    padding: 0 3rem;
+  }
+  /* HERO */
+  .hero-bg-img {
+    bottom: -26rem;
+  }
+  .hero-bg-up {
+    margin-top: 36rem;
+  }
+  .box-up {
+    margin-top: 0rem;
+  }
+  /* REPOSE SECTION */
+  .repos-Box-grid,
+  .feature-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-box {
+    padding: 6rem;
+  }
+  /* FOOTER SECTION */
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+}

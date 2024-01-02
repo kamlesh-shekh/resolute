@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  max-width: 15rem;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  height: 7rem;
+
+  position: relative;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 5rem;
+  row-gap: 1rem;
+}
+.nav-btn {
+  background-image: linear-gradient(to right bottom, #002365, #21e287);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+/* MOBILE NAVIGATION */
+.btn--mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
+/* HERO SECTION */
+.hero-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.hero-h1 {
+  font-weight: 900;
+  font-size: 4.5rem;
+  color: #002365;
+}
+.hero-flex h3 {
+  font-weight: normal;
+}
+.hero-btn {
+  margin: auto;
+  display: block;
+  margin-top: 2rem;
+}
+.hero-bg-img img {
+  width: 100%;
+  margin-top: -18rem;
+}
+.hero-rel {
+  position: relative;
+}
+.hero-bg-img {
+  position: absolute;
+  bottom: -26rem;
+  left: 0;
+  z-index: -3;
+}
+.hero-bg-up {
+  margin-top: 38rem;
+}
+/* REPOS SECTION */
+.repos-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+}
+.repos-box {
+  background-image: linear-gradient(
+    to right bottom,
+    #002365,
+    #00559d,
+    #0087b6,
+    #00b7ab,
+    #21e287
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.3);
+}
+.repos-Box-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 7rem;
+  align-items: center;
+}
+.box-up {
+  margin-top: -8rem;
+}
+.repos-content h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.repos-content img {
+  margin-bottom: 3rem;
+}
+.repos-content p {
+  margin-bottom: 2rem;
+}
+/* FEATURE SECTION */
+.section-all-bg {
+  background-color: #e9f3fd;
+  transform: translateY(5rem);
+}
+.section-all-bg::before {
+  content: "";
+  /* background-image: url("../IMG/background_img.svg"); */
+  background-image: url("../IMG/background_img1.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 10rem;
+  height: 10rem;
+  display: block;
+  transform: translateY(-9rem);
+}
+.section-all-bg::after {
+  /* content: ""; */
+  /* background-image: url("../IMG/background_img.svg"); */
+  /* background-image: url("../IMG/background_img2.svg"); */
+  /* width: 100%;
+  height: 20rem;
+  display: block; */
+}
+.feature-main {
+  background-color: #e9f3fd;
+}
+.section-all-bg h2 {
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+  column-gap: 6rem;
+  row-gap: 5rem;
+
+  padding: 5rem 0;
+}
+.feature-box {
+  background-color: #fff;
+  padding: 3rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 6px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+.feature-box img {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+.feature-box h5 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.feature-box p {
+  margin-bottom: 2rem;
+}
+/* FOOTER SECTION */
+.footer {
+  background-color: #002365;
+  color: #fff;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 5rem;
+}
+.country-flex {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+.social-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid White;
+  border-radius: 50%;
+  color: #fff;
+}
+.li-mb {
+  margin: 1rem 0;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.footer-mt {
+  margin-top: 5rem;
+}
+.footer-city {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

@@ -1,0 +1,73 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Avenir LT Pro";
+}
+h1 {
+  font-size: 3.4rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 2.2rem;
+}
+h5 {
+  font-size: 1.8rem;
+}
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Avenir Next LT Pro" !important;
+} */
+P,
+a,
+span,
+div {
+  font-size: 1.6rem;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+.center {
+  text-align: center;
+}
+.btn {
+  padding: 1.3rem 2.5rem;
+  color: #fff;
+  background-color: #002365;
+  border-radius: 0.5rem;
+}
+.main-color {
+  color: #002365;
+}
+.main-bg-color {
+  background-color: #002365;
+}
+.second-color {
+  color: #21e287;
+}
+.second-bg-color {
+  background-color: #21e287;
+}
+.container {
+  max-width: 130rem;
+  margin: auto;
+  padding: 0 10rem;
+}
+.section-m_tb {
+  margin: 10rem 0;
+}
